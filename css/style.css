@@ -7,7 +7,7 @@ body {
 html {
   font-size: 10px;
   font-family: "Amazon Ember", Arial, sans-serif;
-  color: #c713eb;
+  color: #2a2a2a;
   background-color: #ffffff;
 }
 
@@ -40,12 +40,12 @@ nav,
 article,
 aside,
 footer {
-  background-color: white;
+  background-color: rgb(223, 219, 219);
   padding: 10px;
 }
 
 header {
-  background-color: #6aec8b;
+  background-color: #36dbdb;
   color: #ffffff;
 }
 
@@ -53,6 +53,10 @@ header .logo-section {
   display: flex;
   justify-content: space-between;
   margin: 0 10px;
+}
+
+header .logo-section p {
+  margin: auto 0;
 }
 
 header form {
@@ -74,10 +78,10 @@ input[type="search"] {
 
 .search-autocomplete {
   position: absolute;
-  border: 1px solid #4a613f;
+  border: 1px solid #cecece;
   border-radius: 2px;
   background-color: #ffffff;
-  color: #f12020;
+  color: #000000;
   top: 42px;
   z-index: 100;
 }
@@ -88,7 +92,7 @@ input[type="search"] {
 }
 
 input[type="submit"] {
-  background-color: #0b1ae2;
+  background-color: #a969fe;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border: 0px;
@@ -97,32 +101,35 @@ input[type="submit"] {
 
 header .logo-section .material-icons, header .logo-section .material-icons-outlined {
   vertical-align: text-top;
-  font-size: 16px;
+  font-size: 30px;
 }
 
 @media only screen and (min-width: 576px) {
   header .logo-section .material-icons {
     font-size: 18px;
   }
-  }
+}
+
 header .logo-section a:link {
   color: #ffffff;
   text-decoration: none;
 }
-header .logo-section a:visited{
-  color:#0b1ae2
+
+header .logo-section a:visited {
+  color: #ffffff;
 }
 
 header .btn-login {
-  font-size:  12px;
+  font-size: 12px;
   background-color: transparent;
   border: none;
   margin: 5px;
 }
+
 nav {
-  height: 25px;
-  background-color: #ab18f08a;
-  color: #0e0d0d;
+  height: 45px;
+  background-color: #232f3e;
+  color: #ffffff;
 }
 
 nav > ul {
@@ -148,8 +155,8 @@ nav > ul > li > a {
 }
 
 .btn-main > a:hover {
-  color: #e70e0e;
-  border: 1px solid #febd69;
+  color: #f13636;
+  border: 1px solid #f00b98;
 }
 
 nav > ul > li {
@@ -180,7 +187,7 @@ nav .nav-submenu {
 }
 
 .nav-submenu ul a:hover {
-  background-color: #f516b2;
+  background-color: #13e9a2;
 }
 
 .nav-submenu .material-icons-outlined {
@@ -355,18 +362,23 @@ section {
 }
 
 aside {
-  flex: 1;
-  background-color: #bd212967;
+  flex: 3;
+  padding: 0px;
+}
+
+aside div {
+  background-color: #f0ec0a;
+  padding: 10px;
+  height: 100%;
 }
 
 aside li {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .items-layout {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-;
 }
 
 .item:hover {
@@ -391,13 +403,13 @@ aside li {
 
 .item-image img {
   display: block;
-  width: 300px;
+  width: 296px;
   height: 240px;
 }
 
 .item-footer {
   color: #ffffff;
-  background-color: #0baa1888;
+  background-color: #ff0000;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding-top: 5px;
@@ -411,9 +423,9 @@ aside li {
 }
 
 .item-footer span {
-  color: #1a1c1d;
-  background-color: #0c46b157;
-  border: 2px solid #242928bd;
+  color: #000000;
+  background-color: #eeff00;
+  border: 2px solid #febd69;
   border-radius: 20px;
   padding: 3px;
   margin: 0 5px;
@@ -424,6 +436,10 @@ aside li {
   flex: 100%;
   display: flex;
   justify-content: center;  
+}
+
+.filter-division {
+  margin-bottom: 10px;
 }
 
 .pagination-element {
@@ -442,8 +458,8 @@ aside li {
 }
 
 .pagination-element li.active {
-  color: #853009;
-  background-color: #9465653f;
+  color: #473ec0;
+  background-color: #ff0000;
   border: 1px solid #855210;
 }
 
@@ -467,10 +483,19 @@ aside li {
   width: 100px;
 }
 
+.modal-dialog {
+  color: #000000;
+}
+
+.modal-dialog label {
+  color: #000000;
+  font-size: 14px;
+}
+
 footer {
   text-align: center;
   color: #ffffff;
-  background-color: #259b91;
+  background-color: #37475a;
 }
 
 .item-center {
@@ -483,16 +508,4 @@ footer {
 
 .visible-hidden {
   visibility: hidden;
-}
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }

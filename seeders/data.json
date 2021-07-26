@@ -121,7 +121,7 @@
     },
     {
       "name": "A Hero",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Fun Read",
       "price": "20",
       "image_link": "https://loremflickr.com/300/240/book?lock=17"
