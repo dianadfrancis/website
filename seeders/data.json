@@ -2,119 +2,119 @@
   "items": [
     {
       "name": "Halloween",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Fun Read",
       "price": "20",
       "image_link": "https://loremflickr.com/300/240/Book?lock=5"
     },
     {
       "name": "The Girl",
-      "color": "Non-Fiction",
+      "type": "Non-Fiction",
       "description": "Page Turner",
       "price": "10",
       "image_link": "https://loremflickr.com/300/240/book?lock=6"
     },
     {
       "name": "Caramel",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Must Read",
       "price": "50",
       "image_link": "https://loremflickr.com/300/240/sugar?lock=7"
     },
     {
       "name": "Hat Trick",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Fun Read",
       "price": "20",
       "image_link": "https://loremflickr.com/300/240/hat?lock=5"
     },
     {
       "name": "The Sheik's Return",
-      "color": "Non-Fiction",
+      "type": "Non-Fiction",
       "description": "Page Turner",
       "price": "20",
       "image_link": "https://loremflickr.com/300/240/man?lock=6"
     },
     {
       "name": "Baby Surprise",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Must Read",
       "price": "10",
       "image_link": "https://loremflickr.com/300/240/baby?lock=7"
     },
     {
       "name": "Hollywood Here",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Fun Read",
       "price": "20",
       "image_link": "https://loremflickr.com/300/240/car?lock=8"
     },
     {
       "name": "No Room to Run",
-      "color": "Non-Fiction",
+      "type": "Non-Fiction",
       "description": "Page Turner",
       "price": "1000000",
       "image_link": "https://loremflickr.com/300/240/car?lock=9"
     },
     {
       "name": "My Fake Husband",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Must Read",
       "price": "50",
       "image_link": "https://loremflickr.com/300/240/man?lock=10"
     },
     {
       "name": "Pretend Family",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Fun Read",
       "price": "20",
       "image_link": "https://loremflickr.com/300/240/car?lock=11"
     },
     {
       "name": "Baby Makes Four",
-      "color": "Non-Fiction",
+      "type": "Non-Fiction",
       "description": "Page Turner",
       "price": "10",
       "image_link": "https://loremflickr.com/300/240/baby?lock=12"
     },
     {
       "name": "Pretend Family",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Fun Read",
       "price": "20",
       "image_link": "https://loremflickr.com/300/240/book?lock=11"
     },
     {
       "name": "Baby Makes Four",
-      "color": "Non-Fiction",
+      "type": "Non-Fiction",
       "description": "Page Turner",
       "price": "10",
       "image_link": "https://loremflickr.com/300/240/book?lock=12"
     },
     {
       "name": "Surprise Husband",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Must Read",
       "price": "50",
       "image_link": "https://loremflickr.com/300/240/book?lock=13"
     },
     {
       "name": "Family Plus dog",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Fun Read",
       "price": "20",
       "image_link": "https://loremflickr.com/300/240/book?lock=14"
     },
     {
       "name": "Gone Tomorrow",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Page Turner",
       "price": "10",
       "image_link": "https://loremflickr.com/300/240/book?lock=15"
     },
     {
       "name": "Bone Content",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Must Read",
       "price": "50",
       "image_link": "https://loremflickr.com/300/240/book?lock=16"
@@ -128,14 +128,14 @@
     },
     {
       "name": "Soldier's Welcome",
-      "color": "Non-Fiction",
+      "type": "Non-Fiction",
       "description": "Page Turner",
       "price": "50",
       "image_link": "https://loremflickr.com/300/240/man?lock=18"
     },
     {
       "name": "Hollywood Starlet",
-      "color": "Fiction",
+      "type": "Fiction",
       "description": "Must Read",
       "price": "10",
       "image_link": "https://loremflickr.com/300/240/girl?lock=19"

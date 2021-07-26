@@ -2,78 +2,52 @@
 <html>
     <head>
         <title>Diana's Book Website</title>
-         <link rel="stylesheet" href="css/style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Diana's Book Website">
+        <link rel="icon" type="image/png" href="images/books.png">
+        <meta property="og:url"  content="https://dianadfrancis.github.io/website/" />
+        <meta property="og:type"   content="website" />
+        <meta property="og:title"   content="Diana's Book Website" />
+        <meta property="og:description"  content="Diana's Book Website Description" />
+        <meta property="og:image" content="https://dianadfrancis.github.io/images/books.png" />
+        <meta name="location" content="Books">
+        <meta name="Author" content="Diana's Book Website">
+        <meta name="Subject" content="Diana's Book Website">
+        <meta name="Language" content="English">
+        <meta name="Abstract" content="Diana's Book Website">
+        <meta name="Copyright" content="Copyright 2021 Diana Francis. All rights Reserved.">
+        <meta name="Designer" content="Diana's Book Website">
+        <meta name="Publisher" content="Diana's Book Website">
+        <meta name="Distribution" content="Global">
+        <link rel="canonical" href="https://dianadfrancis.github.io/website/">
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="dns-prefetch" href="http://www.amazon.com/">
+        <link rel="dns-prefetch" href="https://dianadfrancis.github.io/Authors.html">
+
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script type="application/ld+json">
+            {
+              "@context" : "http://schema.org",
+              "@type" : "Product",
+              "image" : "https://dianadfrancis.github.io/images/books.png"
+            }
+        </script>
         <script defer src="js/script.min.js"></script>
+        <script defer src="js/script_index.min.js"></script>
     </head>
     <body>
         <header>
-            <div class="logo-section">
-                <a href="index.html"><img src="images/books.png"/></a>
-                <p>The Best Books!</p>
-                <form>
-                    <input type="search" name="search" placeholder="Search"/>
-                    <input type="submit" value="search" class="material-icons"/>
-                    <div class="search-autocomplete display-none">
-                        <ul>
-                            <li>suggestion keyword</li>
-                        </ul>
-                    </div>
-                </form>
-                
-                    <a href="index1.html">Contact Me<span class="material-icons">mail</span>
-                     </a>
-                
-            </div>
         </header>
         <nav>
-            <ul>
-                <li class="btn-main">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="btn-main" onmouseover="mouseover_on_nav_item(this)" onmouseout="mouseout_on_nav_item(this)">
-                    <a href="buy.html">Purchase</a>
-                    <div class="nav-submenu" onmouseover="mouseover_on_nav_item(this)">
-                        <ul>
-                            <li>
-                                <span class="material-icons-outlined">person</span>
-                                <a href="buy.html">New York Bestseller</a>
-                            </li>
-                            <li>
-                                <span class="material-icons-outlined">person</span>
-                                <a href="buy.html">Amazon Best Seller</a>
-                            </li>
-                            <li>
-                                <span class="material-icons-outlined">person</span>
-                                <a href="buy.html">USA Today Bestseller</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="btn-main" onmouseover="mouseover_on_nav_item(this)" onmouseout="mouseout_on_nav_item(this)">
-                    <a href="#">Hit List</a>
-                    <div class="nav-submenu" onmouseover="mouseover_on_nav_item(this)">
-                        <ul>
-                            <li>
-                                <span class="material-icons-outlined">task</span>
-                                <a href="http://www.amazon.com/">Books</a>
-                            </li>
-                            <li>
-                                <span class="material-icons-outlined">task</span>
-                                <a href="https://www.apple.com/apple-books/">Free Ibooks</a>
-                            </li>
-                            <li>
-                                <span class="material-icons-outlined">task</span>
-                                <a href="buy.html">Black Authors</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="btn-main">
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
         </nav>
+        <main>             
+        </header>
+        
         <main>
             <div class="main-image slider">
                 <img src="https://loremflickr.com/1600/300/library?lock=254" class="slider-item"/>
@@ -102,17 +76,12 @@
                     </article>
                 </section>
                 <aside>
-                    <h3>Today's Bestsellers</h3>
-                    <ul>
-                        <li>The Sheik's Return</li>
-                        <li>Hollywood Here</li>
-                        <li>Surprise Husband</li>
-                    </ul>
+                    
                 </aside>
             </div>
         </main>
         <footer>
-            <p>©Copyright Diana Francis. All Rights Reserved.</p>
+           
         </footer>
 
     </body>
@@ -122,7 +91,7 @@
         let currentPage = 1;
         let totalPage = 0;
         let totalItems = [];
-        let currentColorFilter = "All";
+        let currentTypeFilter = "All";
         const numbersOfItemsInOnePage = 6;
         const items_layout = document.querySelector('#items-layout');
 
@@ -140,12 +109,12 @@
                 item_html += '<div class="item-image"><img src="' + item.image_link + '"" /></div>';
                 item_html += '</div>';
                 item_html += '<div class="item-footer">'
-                item_html += '<div class="item-attribute"><span>' + item.color.toUpperCase() + '</span><span> ' + item.description.toUpperCase() + '</span></div>';
+                item_html += '<div class="item-attribute"><span>' + item.type.toUpperCase() + '</span><span> ' + item.description.toUpperCase() + '</span></div>';
                 item_html += '<div>$' + item.price + '</div>';
                 item_html += '</div>';
                 item_html += '</div>';
 
-                colorCategorySet.add(item.color);
+                colorCategorySet.add(item.type);
                 items_layout.innerHTML += item_html;
             })
 
@@ -181,25 +150,25 @@
             currentPage = page;
             renderItems(totalItems);
         }
-
-        function rerenderItemsByColorFilter(color) {
-            currentColorFilter = color;
-            let filterItems = (currentColorFilter === "All") ? totalItems : totalItems.filter((item)=>{
-                return item.color === color;
+ 
+        function rerenderItemsByTypeFilter(type) {
+            currentTypeFilter = type;
+            let filterItems = (currentTypeFilter === "All") ? totalItems : totalItems.filter((item)=>{
+                return item.type === type;
             })
             currentPage = 1;
             renderItems(filterItems);
         }
 
         function renderDataFilter() {
-            const colorCategoryArray = Array.from(colorCategorySet)
+            const typeCategoryArray = Array.from(typeCategorySet)
             items_layout.innerHTML +=
                 `<div id="filter-element" class="filter-element">
-                    <span>Color:</span>
-                    <select onchange="rerenderItemsByColorFilter(this.options[this.selectedIndex].value);">
+                    <span>Genre:</span>
+                    <select onchange="rerenderItemsByTypeFilter(this.options[this.selectedIndex].value);">
                         <option value="All">All</option>
-                        ${ colorCategoryArray.reduce((accumulator, currentValue, currentIndex)=>{
-                            return accumulator += `<option value="${currentValue}" ${currentColorFilter === currentValue ? "selected":""}>${currentValue}</option>`
+                        ${ typeCategoryArray.reduce((accumulator, currentValue, currentIndex)=>{
+                            return accumulator += `<option value="${currentValue}" ${currentTypeFilter === currentValue ? "selected":""}>${currentValue}</option>`
                         }, "")}
                     </select>
                 </div>`
@@ -241,6 +210,13 @@
         }
 
         readJSONFile("seeders/data.json");
+
+        $(document).ready(function() {
+            /*if(!$.cookie("name") || $.cookie("name") === null) {
+                let name = prompt("What is your name?", "Type your name here");
+                $.cookie("name", name);
+            }*/
+        })
           
     </script>
 </html>
