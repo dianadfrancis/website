@@ -106,12 +106,12 @@
         firebase.analytics();
     </script>    
     <script>
-        let colorCategorySet = new Set();
+        let typeCategorySet = new Set();
 
         let currentPage = 1;
         let totalPage = 0;
         let totalItems = [];
-        let currentColorFilter = "All";
+        let currentTypeFilter = "All";
         const numbersOfItemsInOnePage = 6;
         const items_layout = document.querySelector('#items-layout');
 
@@ -119,7 +119,7 @@
             items_layout.innerHTML = '<div id="filter-division" class="filter-division"></div>'
             totalPage = Math.floor((items.length-1) / numbersOfItemsInOnePage) + 1
             items.forEach((item)=>{
-                colorCategorySet.add(item.color);
+                typeCategorySet.add(item.type);
             })
 
             const itemsOfPage = items.slice(numbersOfItemsInOnePage*(currentPage-1), numbersOfItemsInOnePage*currentPage);
@@ -134,7 +134,7 @@
                 item_html += '<div class="item-image"><img src="' + item.image_link + '"" /></div>';
                 item_html += '</div>';
                 item_html += '<div class="item-footer">'
-                item_html += '<div class="item-attribute"><span>' + item.color.toUpperCase() + '</span><span> ' + item.description.toUpperCase() + '</span></div>';
+                item_html += '<div class="item-attribute"><span>' + item.type.toUpperCase() + '</span><span> ' + item.description.toUpperCase() + '</span></div>';
                 item_html += '<div>$' + item.price + '</div>';
                 item_html += '</div>';
                 item_html += '</div>';
@@ -183,24 +183,24 @@
             }, "")
         }
 
-        function rerenderItemsByColorFilter(color) {
-            currentColorFilter = color;
-            let filterItems = (currentColorFilter === "All") ? totalItems : totalItems.filter((item)=>{
-                return item.color === color;
+        function rerenderItemsByTypeFilter(type) {
+            currentTypeFilter = type;
+            let filterItems = (currentTypeFilter === "All") ? totalItems : totalItems.filter((item)=>{
+                return item.type === type;
             })
             currentPage = 1;
             renderItems(filterItems);
         }
 
         function renderDataFilter() {
-            const colorCategoryArray = Array.from(colorCategorySet)
+            const typeCategoryArray = Array.from(typeCategorySet)
             items_layout.innerHTML +=
                 `<div id="filter-element" class="filter-element">
-                    <span>Color:</span>
-                    <select onchange="rerenderItemsByColorFilter(this.options[this.selectedIndex].value);">
+                    <span>Genre:</span>
+                    <select onchange="rerenderItemsByTypeFilter(this.options[this.selectedIndex].value);">
                         <option value="All">All</option>
-                        ${ colorCategoryArray.reduce((accumulator, currentValue, currentIndex)=>{
-                            return accumulator += `<option value="${currentValue}" ${currentColorFilter === currentValue ? "selected":""}>${currentValue}</option>`
+                        ${ typeCategoryArray.reduce((accumulator, currentValue, currentIndex)=>{
+                            return accumulator += `<option value="${currentValue}" ${currentTypeFilter === currentValue ? "selected":""}>${currentValue}</option>`
                         }, "")}
                     </select>
                 </div>`

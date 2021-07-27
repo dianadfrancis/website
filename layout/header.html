@@ -14,6 +14,12 @@
         <a id="contact" href="contact.html"><span class="d-none d-sm-inline-block">Contact Me</span><span class="material-icons">mail</span>
         </a>
     </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>   
+
     <!-- Button trigger modal -->
     <p id="login-or-user-info">
         <button type="button" class="btn btn-primary btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -56,10 +62,11 @@
   </div>
 
   <script>
+ 
       if($.cookie("name") && $.cookie("name") !== null) {
         changeToUserInfoIcon();
       }
-
+      document.cookie = "tagname = test;secure";
       function changeToUserInfoIcon() {
         $('#login-or-user-info').html(`<a href="javascript:void(0)" onclick="logout()"><span class="material-icons-outlined">face</span></a>`);
       }
@@ -127,7 +134,7 @@
       }
 
       function logout() {
-        let isLogout = confirm("Are you sure you want to logout?");
+        let isLogout = confirm("Please confirm logout!");
         isLogout &&
             firebase.auth().signOut().then(() => {
                 $.removeCookie("name");
@@ -138,3 +145,4 @@
             });
       }
   </script>
+ 
